@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Typing Tutor", "Typing Tutor\Typing Tutor.csproj", "{41DC1FDF-9D36-4B55-8A99-833EFA076CCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelEditor", "LevelEditor\LevelEditor.csproj", "{73E6139A-B38C-45D1-A891-44261B953130}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41DC1FDF-9D36-4B55-8A99-833EFA076CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41DC1FDF-9D36-4B55-8A99-833EFA076CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41DC1FDF-9D36-4B55-8A99-833EFA076CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41DC1FDF-9D36-4B55-8A99-833EFA076CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E6139A-B38C-45D1-A891-44261B953130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E6139A-B38C-45D1-A891-44261B953130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E6139A-B38C-45D1-A891-44261B953130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E6139A-B38C-45D1-A891-44261B953130}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

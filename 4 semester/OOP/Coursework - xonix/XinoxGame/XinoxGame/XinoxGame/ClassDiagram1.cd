@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="XonixGame.GameObjects.Accelerator" Collapsed="true">
+    <Position X="22.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAABAQAAAAgAAAAAEAAKAAIAAAAIABAgQAEIAA=</HashCode>
+      <FileName>GameObjects\Accelerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="XonixGame.GameObjects.Background" Collapsed="true">
+    <Position X="36.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABAAAAgAgAAAAAEAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Background.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.BonusGenerator" Collapsed="true">
+    <Position X="40.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQCAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>GameObjects\BonusGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.BorderBlock" Collapsed="true">
+    <Position X="20.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\BorderBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.Camera2D" Collapsed="true">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAEAAAAAAIJAgAAIAAAQAAABAAAAAAAAAhAgAAAA=</HashCode>
+      <FileName>GameObjects\Camera.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="XonixGame.GameObjects.Explosion" Collapsed="true">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABAAAAgAgAAAAAEAAAAAAAAAABAEAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Explosion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.FixedGroundBlock" Collapsed="true">
+    <Position X="13.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\FixedGroundBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.GroundBlock" Collapsed="true">
+    <Position X="16" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\GroundBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.HardBall" Collapsed="true">
+    <Position X="27.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAIAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>GameObjects\HardBall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.MainDevice" Collapsed="true">
+    <Position X="29.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\MainDevice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.Mine" Collapsed="true">
+    <Position X="31.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAIAAAAAAAAAAAIAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>GameObjects\Mine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.PathBlock" Collapsed="true">
+    <Position X="11.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\PathBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.Playground" Collapsed="true">
+    <Position X="9.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAJFAFACHAgAhAoAAAEQAIBQICAAAAgADhBAAACA=</HashCode>
+      <FileName>GameObjects\Playground.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.PlaygroundBlock" Collapsed="true">
+    <Position X="16" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABGAIFABAABAgAgAAAAAEAAAAJAAAQAAAEAAAAAAAA=</HashCode>
+      <FileName>GameObjects\PlaygroundBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.SoftBall" Collapsed="true">
+    <Position X="25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\SoftBall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.StatisticsPanel" Collapsed="true">
+    <Position X="38.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAQAAgAAAAAAAAEAAACAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>GameObjects\StatisticsPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.WaterBlock" Collapsed="true">
+    <Position X="18.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\WaterBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.ZoomInEffect" Collapsed="true">
+    <Position X="43" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\ZoomInEffect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.ZoomingEffect" Collapsed="true">
+    <Position X="45.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\ZoomingEffect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjects.ZoomOutEffect" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\ZoomOutEffect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjectsBase.Ball" Collapsed="true">
+    <Position X="28.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAABABAAAAgEgIAAAAEAAIQIAAAAAAAEABAAAAAA=</HashCode>
+      <FileName>GameObjectsBase\Ball.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjectsBase.Bonus" Collapsed="true">
+    <Position X="22.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgABAACAAAgAgAAAAACAAIAAAAAAIAAAAgAIAAAA=</HashCode>
+      <FileName>GameObjectsBase\Bonus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjectsBase.Box" Collapsed="true">
+    <Position X="34" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAABABACAAgAgAAAAAEAAIBAAAAAAAAEABAAAAAA=</HashCode>
+      <FileName>GameObjectsBase\Box.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjectsBase.DrawableGameObject" Collapsed="true">
+    <Position X="21.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAgJgAAAAAEAAAAABAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectsBase\DrawableGameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="XonixGame.GameObjectsBase.GameObject" Collapsed="true">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAgAEAACAAAIAAAAAAABAAAAgAAAAQAAAAAQACAAQ=</HashCode>
+      <FileName>GameObjectsBase\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="XonixGame.GameObjectsBase.InteractiveGameObject" Collapsed="true">
+    <Position X="21.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>GameObjectsBase\InteractiveGameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="XonixGame.GameObjectsBase.LimitedTimeBonus" Collapsed="true">
+    <Position X="22.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQgAAAAAAgAABAAAAAAAAAIAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>GameObjectsBase\LimitedTimeBonus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XonixGame.GameObjectsBase.MoveableGameObject" Collapsed="true">
+    <Position X="29.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQCAgAAAIAACAAAACAAAAAAQAAIAAAQIABJBAAEJAA=</HashCode>
+      <FileName>GameObjectsBase\MoveableGameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="XonixGame.GameObjectsBase.IDrawable" Collapsed="true">
+    <Position X="4.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAgBgAAAAAEAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjectsBase\IDrawable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="XonixGame.GameObjectsBase.IGameObject" Collapsed="true">
+    <Position X="4.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>GameObjectsBase\IGameObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="XonixGame.GameObjectsBase.IInteractive" Collapsed="true">
+    <Position X="4.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>GameObjectsBase\IInteractive.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="XonixGame.GameObjectsBase.IMoveable" Collapsed="true">
+    <Position X="4.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAIABAAAAEIAA=</HashCode>
+      <FileName>GameObjectsBase\IMoveable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="XonixGame.GameObjectsBase.IUpdatable" Collapsed="true">
+    <Position X="4.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>GameObjectsBase\IUpdatable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

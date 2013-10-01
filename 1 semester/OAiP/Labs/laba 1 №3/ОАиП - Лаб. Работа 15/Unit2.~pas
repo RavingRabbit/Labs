@@ -1,0 +1,82 @@
+unit Unit2;
+
+interface
+uses Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls;
+
+Type
+  PSel=^TSel;
+  TSel=record
+    inf:integer;
+    A:PSel;
+  end;
+  TStak=class
+    s,r:integer;
+    sp1,spk,sp:PSel;
+   constructor create;
+   procedure Adds(Inf:integer);
+   procedure Reads(Var Inf:integer);
+   procedure Min;
+   procedure KolDoMin(x:integer);
+  end;
+
+implementation
+
+constructor TStak.create;
+begin
+  Inherited create;
+  sp1:=nil;
+end;
+
+procedure TStak.Adds;
+begin
+  New(sp);
+  sp^.Inf:=Inf;
+  sp^.A:=sp1;
+  sp1:=sp;
+end;
+
+procedure TStak.Reads;
+begin
+  if sp=nil then
+    ShowMessage('Стек пуст')
+  else
+    begin
+      Inf:=sp1^.Inf;
+      sp:=sp1;
+      sp1:=sp1^.A;
+      Dispose(sp);
+    end;
+end;
+
+procedure TStak.Min;
+begin
+  sp:=sp1;
+  r:=sp1.inf;
+  while sp^.A<>Nil do
+    begin
+      if (sp^.A.inf<r) then
+        r:=sp^.A.inf;
+      sp:=sp^.A;
+    end;
+end;
+
+procedure TStak.KolDoMin;
+begin
+  sp:=sp1;
+  if sp1.inf=x then
+    s:=0
+  else
+    begin
+      s:=1;
+      while (sp^.A.inf<>x) and (sp^.A<>nil) do
+        begin
+          sp:=sp^.A;
+          Inc(s);
+        end;
+    end;
+end;
+
+
+
+end.
