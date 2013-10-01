@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Форма</title>		
+	</head>
+	<body>
+		<h1>Форма</h1>
+		<form action="#" method="post" name="userinfo">
+			<fieldset>
+				<legend>Личная информация</legend>
+				<div>
+					<label for="firstname">Имя:</label>
+					<input type="text" id="firstname" name="firstname" />
+				</div>
+				<div>
+					<label for="lastname">Фамилия:</label>
+					<input type="text" id="lastname" name="lastname" />
+				</div>
+				<div>
+					<label for="middlename">Отчество:</label>
+					<input type="text" id="middlename" name="middlename" />
+				</div>
+				<div>
+					<label for="birthday">Дата рождения:</label>
+					<input type="text" id="birthday" name="birthday" />
+				</div>
+				<div>
+					Пол:
+					<label>
+						<input type="radio" value="0" id="gender1" name="gender" checked="checked">
+						Мужской
+					</label>
+					<label>
+						<input type="radio" value="1" id="gender2" name="gender">	
+						Женский
+					</label>					
+				</div>
+				<div>
+					<label for="subscribe">Подписаться на рассылку:</label>
+					<input type="checkbox" id="subscribe" name="subscribe">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Дополнительная информация</legend>
+				<div>
+					<label for="color">Любимый цвет: </label>
+					<select name="color" id="color">
+						<option>Красный</option>
+						<option>Жёлтый</option>
+						<option>Синий</option>
+					</select>
+				</div>
+				<div>
+					<label for="drinks">Любимые напитки: </label>
+					<div>
+						<select name="drinks[]" id="drinks" multiple="multiple">
+							<option>Чай</option>
+							<option>Кофе</option>
+							<option>Сок</option>
+							<option>Алкоголь</option>
+						</select>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Обратная связь</legend>
+				<textarea rows="5" cols="50" name="formFeedback" id="formFeedback"></textarea>
+			</fieldset>
+			<input type="submit" name="submit" value="Отправить" />
+		</form>
+	</body>
+</html>

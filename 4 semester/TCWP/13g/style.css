@@ -1,0 +1,46 @@
+
+body{
+background : #222222;
+}
+h3{
+color: white;
+font-family: Garamond;
+font-size: 22px;
+line-height:0.7;
+
+}
+p,t {
+color: #00CC5C;
+font-family: Tahoma;
+}
+
+
+h1{
+color: #F2B923;
+font-family: Tahoma;
+}
+legend , label{
+color: white;
+font-family: Tahoma;
+}
+
+
+h2{
+color: white;
+font-family: Garamond;
+font-size: 30px;
+text-decoration: underline;
+}
+
+ a:link {
+color:#E9E9E9;
+}
+ a:visited{
+color:#E9E9E9;
+}
+ a:hover{
+color:#00CC5C;
+}
+ a:active {
+color:#000000;
+}
