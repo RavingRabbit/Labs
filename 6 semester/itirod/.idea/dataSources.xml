@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3176153790">
+    <data-source source="LOCAL" name="SQL Server - Itirod.Lab5.Test@PROUSERPC\RAVINGDEVSQLSERV" uuid="35fc8907-55b4-47b7-8431-efc6f7321a0e">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://PROUSERPC\RAVINGDEVSQLSERV;databaseName=Itirod.Lab5.Test</jdbc-url>
+      <vm-options>-ea -Djava.library.path=&quot;C:\Program Files\Microsoft JDBC Driver 4.0 for SQL Server\sqljdbc_4.0\enu\auth\x64&quot;</vm-options>
+      <driver-properties>
+        <property name="integratedSecurity" value="true" />
+      </driver-properties>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

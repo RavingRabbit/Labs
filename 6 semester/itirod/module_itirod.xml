@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_itirod" default="compile.module.itirod">
+  <dirname property="module.itirod.basedir" file="${ant.file.module_itirod}"/>
+  
+  <property name="module.jdk.home.itirod" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.itirod" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.itirod" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.itirod" value="-encoding UTF-8 -source 1.7 ${compiler.args}"/>
+  
+  <property name="itirod.output.dir" value="${module.itirod.basedir}/out/production/itirod"/>
+  <property name="itirod.testoutput.dir" value="${module.itirod.basedir}/out/test/itirod"/>
+  
+  <path id="itirod.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="itirod.module.production.classpath">
+    <path refid="${module.jdk.classpath.itirod}"/>
+  </path>
+  
+  <path id="itirod.runtime.production.module.classpath">
+    <pathelement location="${itirod.output.dir}"/>
+  </path>
+  
+  <path id="itirod.module.classpath">
+    <path refid="${module.jdk.classpath.itirod}"/>
+    <pathelement location="${itirod.output.dir}"/>
+  </path>
+  
+  <path id="itirod.runtime.module.classpath">
+    <pathelement location="${itirod.testoutput.dir}"/>
+    <pathelement location="${itirod.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.itirod">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.itirod">
+    <patternset refid="excluded.from.module.itirod"/>
+  </patternset>
+  
+  
+  <target name="compile.module.itirod" depends="compile.module.itirod.production,compile.module.itirod.tests" description="Compile module itirod"/>
+  
+  <target name="compile.module.itirod.production" description="Compile module itirod; production classes"/>
+  
+  <target name="compile.module.itirod.tests" depends="compile.module.itirod.production" description="compile module itirod; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.itirod" description="cleanup module">
+    <delete dir="${itirod.output.dir}"/>
+    <delete dir="${itirod.testoutput.dir}"/>
+  </target>
+</project>

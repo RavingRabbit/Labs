@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_common" default="compile.module.common">
+    <dirname property="module.common.basedir" file="${ant.file.module_common}"/>
+
+    <property name="module.jdk.home.common" value="${project.jdk.home}"/>
+    <property name="module.jdk.bin.common" value="${project.jdk.bin}"/>
+    <property name="module.jdk.classpath.common" value="${project.jdk.classpath}"/>
+
+    <property name="compiler.args.common" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+
+    <property name="common.output.dir" value="${module.common.basedir}/out/production/common"/>
+    <property name="common.testoutput.dir" value="${module.common.basedir}/out/test/common"/>
+    <property name="common.lib" value="${module.common.basedir}/lib/"/>
+
+    <path id="common.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="common.module.production.classpath">
+        <path refid="${module.jdk.classpath.common}"/>
+    </path>
+
+    <path id="common.runtime.production.module.classpath">
+        <pathelement location="${common.output.dir}"/>
+    </path>
+
+    <path id="common.module.classpath">
+        <path refid="${module.jdk.classpath.common}"/>
+        <pathelement location="${common.output.dir}"/>
+        <pathelement location="${idea.home}/lib/junit-4.11.jar"/>
+    </path>
+
+    <path id="common.runtime.module.classpath">
+        <pathelement location="${common.testoutput.dir}"/>
+        <pathelement location="${common.output.dir}"/>
+        <pathelement location="${idea.home}/lib/junit-4.11.jar"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.common">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.common">
+        <patternset refid="excluded.from.module.common"/>
+    </patternset>
+
+    <path id="common.module.sourcepath">
+        <dirset dir="${module.common.basedir}">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+    <path id="common.module.test.sourcepath">
+        <dirset dir="${module.common.basedir}">
+            <include name="test"/>
+        </dirset>
+    </path>
+
+    <target name="make.jar.common" depends="compile.module.common" description="make common.jar">
+        <jar destfile="${common.output.dir}/common.jar">
+            <fileset dir="${common.output.dir}">
+                <include name="**/*.class"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="compile.module.common" description="Compile module common"
+            depends="compile.module.common.production, compile.module.common.tests, test.common">
+    </target>
+
+    <target name="test.common" unless="skip.tests">
+        <junit printsummary="yes" haltonfailure="yes">
+            <classpath>
+                <pathelement location="${junit.classpath}"/>
+                <pathelement location="${hamcrest.core.classpath}"/>
+                <pathelement location="${hamcrest.lib.classpath}"/>
+                <pathelement location="${common.output.dir}"/>
+                <pathelement location="${common.testoutput.dir}"/>
+            </classpath>
+            <formatter type="brief" usefile="false"/>
+
+            <batchtest fork="yes">
+                <fileset dir="${module.common.basedir}/test/">
+                    <include name="**/*Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+    <target name="compile.module.common.production" description="Compile module common; production classes">
+        <mkdir dir="${common.output.dir}"/>
+        <javac destdir="${common.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.common}/javac">
+            <compilerarg line="${compiler.args.common}"/>
+            <bootclasspath refid="common.module.bootclasspath"/>
+            <classpath refid="common.module.production.classpath"/>
+            <src refid="common.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.common"/>
+        </javac>
+
+        <copy todir="${common.output.dir}">
+            <fileset dir="${module.common.basedir}/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="compile.module.common.tests" depends="compile.module.common.production"
+            description="compile module common; test classes" unless="skip.tests">
+        <mkdir dir="${common.testoutput.dir}"/>
+        <javac destdir="${common.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.common}/javac">
+            <compilerarg line="${compiler.args.common}"/>
+            <bootclasspath refid="common.module.bootclasspath"/>
+            <classpath refid="common.module.classpath"/>
+            <src refid="common.module.test.sourcepath"/>
+            <patternset refid="excluded.from.compilation.common"/>
+        </javac>
+
+        <copy todir="${common.testoutput.dir}">
+            <fileset dir="${module.common.basedir}/test">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="clean.module.common" description="cleanup module">
+        <delete dir="${common.output.dir}"/>
+        <delete dir="${common.testoutput.dir}"/>
+    </target>
+</project>

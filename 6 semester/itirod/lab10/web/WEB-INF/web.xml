@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+
+    <servlet>
+        <servlet-name>clients</servlet-name>
+        <servlet-class>com.ravingdev.itirod.lab10.servlets.ClientsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>clients</servlet-name>
+        <url-pattern>/clients</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>clients</servlet-name>
+        <url-pattern>/xslt/clients</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>XSLTFilter</filter-name>
+        <filter-class>com.ravingdev.itirod.lab10.filters.XSLTFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>XSLTFilter</filter-name>
+        <url-pattern>/xslt/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>uploadClients</servlet-name>
+        <servlet-class>com.ravingdev.itirod.lab10.servlets.UploadClientsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>uploadClients</servlet-name>
+        <url-pattern>/clients/upload</url-pattern>
+    </servlet-mapping>
+</web-app>
